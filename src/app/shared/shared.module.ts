@@ -7,7 +7,8 @@ import {
   MatButtonModule,
   MatCardModule,
   MatInputModule,
-  MatSidenavModule
+  MatSidenavModule,
+  MatListModule
 } from "@angular/material";
 
 
@@ -20,7 +21,8 @@ import {
     MatButtonModule,
     MatCardModule,
     MatInputModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatListModule
   ],
   exports:[
     CommonModule, 
@@ -29,7 +31,8 @@ import {
     MatButtonModule,
     MatCardModule,
     MatInputModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatListModule
   ]
 })
 export class SharedModule { }
