@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
+  day:string;
 
   constructor() { }
 
   ngOnInit() {
+    this.day = `day${new Date().getDay()}`;
   }
+
 
 }
