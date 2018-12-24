@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import "@angular/material/prebuilt-themes/deeppurple-amber.css";
+
 html,
 body,
 app-root,
@@ -8,6 +10,11 @@ app-root,
   margin: 0;
 }
 
+app-root > mat-sidenav-container {
+  width: 100%;
+  height: 100%;
+}
+
 .site {
   display: flex;
   flex-direction: column;
@@ -15,5 +22,25 @@ app-root,
 
 .site main {
   flex-grow: 1;
-  background-color: gray;
+  height: 0; // fixed chrome bug to let child element get the 100% height
 }
+
+.site .header {
+  height: 65px;
+}
+.site .footer {
+  height: 65px;
+}
+
+.full-width{
+  width:100%;
+}
+
+.fill-remaining-space {
+  flex: 1 1 auto;
+}
+
+
+
+
+
